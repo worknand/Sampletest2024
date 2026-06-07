@@ -46,6 +46,9 @@ public class LTSelenium {
 		AssertJUnit.assertTrue(driver.getTitle().contains("Automation"));
 		
 		driver.findElement(By.id("email1")).sendKeys("admin@email.com");
+        ltOptions.put("build", "SeleniumBuild");
+
+        ltOptions.put("project", "SeleniumBuild");
 		
 		driver.findElement(By.name("password1")).sendKeys("admin@123");
 		
